@@ -17,6 +17,10 @@ public class CrimeLab {
         return sCrimeLab;
     }
 
+    public List<Crime> getCrimes(){
+        return mCrimes;
+    }
+
     private CrimeLab(Context context){
         mCrimes = new ArrayList<>();
         for (int i = 0; i < 100; i++){
