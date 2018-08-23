@@ -50,6 +50,13 @@ public class CrimePagerActivity extends AppCompatActivity {
                 return mCrimes.size();
             }
         });
+
+        for (Crime crime : mCrimes){
+            if (crime.getId().equals(crimeID)){
+                mViewPager.setCurrentItem(mCrimes.indexOf(crime));
+                break;
+            }
+        }
     }
 
 }
